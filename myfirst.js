@@ -14,8 +14,8 @@ http.createServer(function (req, res) {
 }).listen(8080); //the server object listens on port 8080
  */
 
-//create a file named newfile.txt:
-fs.appendFile('newfile1.txt', 'Hello content!', function (err) {
+//create a file named newfile2.txt:
+fs.open('newfile2.txt', 'w', function (err, file) {
     if (err) throw err;
-    console.log('Salvestatud!');
+    console.log('Saved!');
 });
