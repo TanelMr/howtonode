@@ -15,7 +15,7 @@ http.createServer(function (req, res) {
  */
 
 //delete file:
-fs.unlink('newfile3.txt', function (err) {
+fs.rename('newfile1.txt', "uusfailinimi.txt", function (err) {
     if (err) throw err;
-    console.log('Deleted!');
+    console.log('File renamed!');
 });
